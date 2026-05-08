@@ -1,7 +1,7 @@
 "use client"
 
 import { motion } from "framer-motion"
-import { Zap, Mail, MapPin, Phone, ArrowUpRight } from "lucide-react"
+import { Mail, MapPin, Phone, ArrowUpRight } from "lucide-react"
 
 const footerLinks = {
   tienda: ["Laptops", "Componentes", "Servidores", "Perifericos"],
@@ -19,11 +19,12 @@ export function Footer() {
           {/* Brand */}
           <div className="flex flex-col gap-5 lg:col-span-1">
             <a href="#inicio" className="group flex items-center gap-3">
-              <div className="relative flex h-10 w-10 items-center justify-center">
-                <div className="absolute inset-0 rounded-xl bg-gradient-to-br from-primary to-accent opacity-60 blur-sm" />
-                <div className="relative flex h-10 w-10 items-center justify-center rounded-xl bg-gradient-to-br from-primary to-accent">
-                  <Zap className="h-5 w-5 text-primary-foreground" />
-                </div>
+              <div className="relative h-10 w-10 overflow-hidden rounded-xl transition-transform group-hover:scale-110">
+                <img
+                  src="/logo-digitronyx.png"
+                  alt="Digitronyx Logo"
+                  className="h-full w-full object-cover"
+                />
               </div>
               <span className="text-xl font-bold text-foreground">
                 Digitronyx
