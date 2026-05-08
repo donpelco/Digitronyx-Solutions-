@@ -1,6 +1,5 @@
 "use client"
 
-import { motion } from "framer-motion"
 import { Mail, MapPin, Phone, ArrowUpRight } from "lucide-react"
 
 const footerLinks = {
@@ -106,7 +105,7 @@ export function Footer() {
                 <div className="flex h-8 w-8 shrink-0 items-center justify-center rounded-lg bg-primary/10">
                   <MapPin className="h-4 w-4 text-primary" />
                 </div>
-                Av. Tecnologia 1024, Ciudad Digital
+                C/1ra #10, Los Rosales, Santo Domingo Este
               </li>
             </ul>
           </div>
