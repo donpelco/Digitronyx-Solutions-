@@ -99,7 +99,7 @@ export function Footer() {
                 <div className="flex h-8 w-8 shrink-0 items-center justify-center rounded-lg bg-primary/10">
                   <Phone className="h-4 w-4 text-primary" />
                 </div>
-                +1 (555) 123-4567
+                809 664 8887
               </li>
               <li className="flex items-start gap-3 text-sm text-muted-foreground">
                 <div className="flex h-8 w-8 shrink-0 items-center justify-center rounded-lg bg-primary/10">
