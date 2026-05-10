@@ -3,7 +3,6 @@
 import { Mail, MapPin, Phone, ArrowUpRight } from "lucide-react"
 
 const footerLinks = {
-  tienda: ["Laptops", "Componentes", "Servidores", "Perifericos"],
   servicios: ["Reparacion", "Mantenimiento", "Servidores", "Redes"],
 }
 
@@ -16,7 +15,7 @@ export function Footer() {
       <div className="mx-auto max-w-7xl px-6 py-16 lg:px-8">
         <div className="grid grid-cols-1 gap-12 md:grid-cols-2 lg:grid-cols-4">
           {/* Brand */}
-          <div className="flex flex-col gap-5 lg:col-span-1">
+          <div className="flex flex-col gap-5 lg:col-span-2">
             <a href="#inicio" className="group flex items-center gap-3">
               <div className="relative h-10 w-10 overflow-hidden rounded-xl transition-transform group-hover:scale-110">
                 <img
@@ -43,25 +42,7 @@ export function Footer() {
             </div>
           </div>
 
-          {/* Tienda Links */}
-          <div>
-            <h4 className="mb-4 text-xs font-mono uppercase tracking-widest text-primary">
-              Tienda
-            </h4>
-            <ul className="flex flex-col gap-3">
-              {footerLinks.tienda.map((item) => (
-                <li key={item}>
-                  <a
-                    href="#tienda"
-                    className="group flex items-center text-sm text-muted-foreground transition-colors hover:text-foreground"
-                  >
-                    {item}
-                    <ArrowUpRight className="ml-1 h-3 w-3 opacity-0 transition-all group-hover:opacity-100" />
-                  </a>
-                </li>
-              ))}
-            </ul>
-          </div>
+
 
           {/* Servicios Links */}
           <div>
@@ -114,7 +95,7 @@ export function Footer() {
         {/* Bottom bar */}
         <div className="mt-12 flex flex-col items-center justify-between gap-4 border-t border-border pt-8 sm:flex-row">
           <p className="text-xs text-muted-foreground font-mono">
-            {new Date().getFullYear()} Digitronyx Solutions. Todos los derechos
+            &copy; {new Date().getFullYear()} Digitronyx Solutions. Todos los derechos
             reservados.
           </p>
           <div className="flex items-center gap-4 text-xs text-muted-foreground">
