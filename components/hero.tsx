@@ -49,13 +49,13 @@ export function Hero() {
           animate={{ opacity: 1, scale: 1, filter: "blur(0px)" }}
           transition={{ duration: 0.8, delay: 0.3 }}
         >
-          <div className="inline-flex items-center gap-2 rounded-full border border-primary/30 bg-primary/10 px-5 py-2 text-xs font-medium text-slate-900 dark:bg-card/50 dark:border-border dark:text-slate-200">
+          <div className="inline-flex items-center gap-2 rounded-full border border-primary/30 bg-primary/10 px-5 py-2 text-xs font-medium text-foreground dark:bg-card/50 dark:border-border">
             <span className="relative flex h-2 w-2">
               <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-primary opacity-75" />
               <span className="relative inline-flex h-2 w-2 rounded-full bg-primary" />
             </span>
             <span className="font-bold">Hardware Premium</span>
-            <span className="text-slate-500 dark:text-slate-400">&</span>
+            <span className="text-primary">&</span>
             <span className="font-bold">Soporte IT Profesional</span>
           </div>
         </motion.div>
